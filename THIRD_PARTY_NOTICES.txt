@@ -1,0 +1,17 @@
+Technical references used:
+
+1. nlgxzef — NFSMW-Markers Cheat Engine table
+   Documents the four PC v1.3 marker-count addresses.
+   https://gist.github.com/nlgxzef/bdef0aa9c48f9f6254c1fae44387caf6
+
+2. RafaelRS04 — EveryBonusMarkerNFSMW
+   Community ASI implementation demonstrating the same marker-count concept.
+   GPL-3.0 repository:
+   https://github.com/RafaelRS04/EveryBonusMarkerNFSMW
+
+3. s-b-repo — nfsmw-2005-re
+   Clean-room reverse-engineering/modding documentation for NFSMW (2005).
+   BSD-3-Clause repository:
+   https://github.com/s-b-repo/nfsmw-2005-re
+
+No Electronic Arts game binaries/assets are included.
