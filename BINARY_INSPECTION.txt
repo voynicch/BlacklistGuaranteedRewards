@@ -1,0 +1,25 @@
+Blacklist Guaranteed Rewards v0.1.1 — Binary inspection
+
+File: scripts/BlacklistGuaranteedRewards.asi
+Architecture: PE32 / Intel i386 / Windows DLL
+SHA-256: 4ca92c6d28a6b1c2ef256a5d7f241b5c2bc4689c18173c4f9c0c662f79eac070
+
+Normal PE imports:
+- KERNEL32.dll!CloseHandle
+- KERNEL32.dll!CreateThread
+- KERNEL32.dll!DisableThreadLibraryCalls
+- KERNEL32.dll!FlushInstructionCache
+- KERNEL32.dll!GetCurrentProcess
+- KERNEL32.dll!Sleep
+- KERNEL32.dll!VirtualProtect
+
+Not present in v0.1.1:
+- PEB walking
+- Manual export parsing / GetProcAddress replacement
+- Network imports
+- File deletion APIs
+- Registry persistence APIs
+- Process injection APIs such as WriteProcessMemory/CreateRemoteThread
+- Packers or obfuscators
+
+Note: the ASI still modifies four known bytes inside the running speed.exe process because that is the mod's intended gameplay function.
